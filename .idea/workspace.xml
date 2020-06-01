@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="264e0d40-1559-4ece-a192-1ee16efffe58" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/applications/lookup_table/lookup_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/lookup_table/lookup_table.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/sumdiff/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/applications/sumdiff/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/sumdiff/sumdiff.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/sumdiff/sumdiff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/expensive_seq/expensive_seq.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/expensive_seq/expensive_seq.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,13 +13,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/applications/lookup_table/lookup_table.py">
+        <entry file="file://$PROJECT_DIR$/applications/expensive_seq/expensive_seq.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="209">
+              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -46,6 +41,7 @@
         <option value="$PROJECT_DIR$/applications/sumdiff/README.md" />
         <option value="$PROJECT_DIR$/applications/sumdiff/sumdiff.py" />
         <option value="$PROJECT_DIR$/applications/lookup_table/lookup_table.py" />
+        <option value="$PROJECT_DIR$/applications/expensive_seq/expensive_seq.py" />
       </list>
     </option>
   </component>
@@ -87,13 +83,7 @@
               <item name="cs-module-project-hash-tables" type="b2602c69:ProjectViewProjectNode" />
               <item name="cs-module-project-hash-tables" type="462c0819:PsiDirectoryNode" />
               <item name="applications" type="462c0819:PsiDirectoryNode" />
-              <item name="lookup_table" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cs-module-project-hash-tables" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cs-module-project-hash-tables" type="462c0819:PsiDirectoryNode" />
-              <item name="applications" type="462c0819:PsiDirectoryNode" />
-              <item name="sumdiff" type="462c0819:PsiDirectoryNode" />
+              <item name="expensive_seq" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -104,6 +94,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
@@ -118,8 +109,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.lookup_table">
-    <configuration name="hashtable" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.expensive_seq">
+    <configuration name="expensive_seq" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cs-module-project-hash-tables" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -127,11 +118,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/hashtable" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/applications/expensive_seq" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hashtable/hashtable.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/applications/expensive_seq/expensive_seq.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -226,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.expensive_seq" />
         <item itemvalue="Python.lookup_table" />
         <item itemvalue="Python.test_hashtable_resize" />
         <item itemvalue="Python.test_hashtable_no_collisions" />
         <item itemvalue="Python.test_hashtable" />
-        <item itemvalue="Python.hashtable" />
       </list>
     </recent_temporary>
   </component>
@@ -260,8 +251,8 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3284974" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3284974" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -330,11 +321,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/applications/lookup_table/lookup_table.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state relative-caret-position="376">
+          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/expensive_seq/test_expseq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applications/expensive_seq/expensive_seq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
         </state>
       </provider>
     </entry>
