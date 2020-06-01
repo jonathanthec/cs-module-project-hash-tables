@@ -1,6 +1,6 @@
 # Equivalent Sums and Differences
 
-This is a tricky one.
+This is a ``tricky one.
 
 We have an ordered set of numbers `q`, which can have any numbers in it
 (no duplicates).
