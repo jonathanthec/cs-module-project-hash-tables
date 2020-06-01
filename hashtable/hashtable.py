@@ -52,8 +52,8 @@ class HashTable:
 
         self.key_count += 1
 
-        # if self.get_load_factor() > 0.5:
-        #     self.resize(self.capacity * 2)
+        if self.get_load_factor() > 0.5:
+            self.resize(self.capacity * 2)
 
     def delete(self, key):
         """Remove the value stored with the given key. Print a warning if the key is not found."""
@@ -68,9 +68,10 @@ class HashTable:
             current = current.next
         if current.key is key:
             current.value = None
+            self.key_count -= 1
 
-        # if self.capacity > 8 and self.get_load_factor() < 0.2:
-        #     self.resize(self.capacity / 2)
+        if self.capacity > 8 and self.get_load_factor() < 0.2:
+            self.resize(self.capacity // 2)
 
     def get(self, key):
         """Retrieve the value stored with the given key. Returns None if the key is not found."""
@@ -92,7 +93,7 @@ class HashTable:
             if pair is None:
                 continue
             current_pair = pair
-            while current_pair:
+            while current_pair and current_pair.value:
                 index = self.hash_index(current_pair.key)
                 new_storage[index] = HashTableEntry(current_pair.key, current_pair.value)
                 current_pair = current_pair.next
@@ -114,24 +115,21 @@ if __name__ == "__main__":
     ht.put("line_10", "Long time the manxome foe he sought--")
     ht.put("line_11", "So rested he by the Tumtum tree")
     ht.put("line_12", "And stood awhile in thought.")
-    print("")
 
-    # Test storing beyond capacity
-    # for i in range(1, 13):
-    #     print(ht.get(f"line_{i}"))
-    #
-    # print(ht.get_num_slots())
+    print(ht.get_num_slots())
 
-    # Test resizing
-    old_capacity = ht.get_num_slots()
-    ht.resize(ht.capacity * 2)
-    new_capacity = ht.get_num_slots()
+    ht.delete("line_12")
+    ht.delete("line_11")
+    ht.delete("line_10")
+    ht.delete("line_9")
+    ht.delete("line_8")
+    ht.delete("line_7")
+    ht.delete("line_6")
+    ht.delete("line_5")
+    ht.delete("line_4")
+    ht.delete("line_3")
+    ht.delete("line_2")
 
-    # print(f"\nResized from {old_capacity} to {new_capacity}.\n")
+    print(ht.get_num_slots())
 
-    # Test if data intact after resizing
-    for i in range(1, 13):
-        print(ht.get(f"line_{i}"))
-
-    print("")
 
